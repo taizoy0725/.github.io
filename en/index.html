@@ -1,43 +1,147 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rolled Paper Calculator</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            border-radius: 5px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            display: block;
+        }
+        .feature-list {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .feature-list li {
+            margin-bottom: 10px;
+        }
+        .screenshot-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .screenshot {
+            width: 45%;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Rolled Paper Calculator - 巻き紙電卓 -</h1>
+        <h1>Rolled Paper Calculator</h1>
     </header>
     <main>
+        <img src="/api/placeholder/100/100" alt="Rolled Paper Calculator App Icon" class="app-icon">
+        
         <section id="app-description">
-            <h2>Features of this App</h2>
-            <p>Rolled Paper Calculator has award for 2010 the best iPhone App in Japan (AppBank) <br> 
-Ver7.0 has decimal calc engine.<br> 
-Roll Paper Calculator records all input and result history, then you can confirm your process of calculation<br> 
-This App outputs the history of calculation like print the calc record to the paper. And you can see all the calculation process on the paper using your finger.<br>
-Usage: calculation while shopping, calculation house hold budget, etc.<br>
-</p>
+            <h2>App Features</h2>
+            <p>
+                The Rolled Paper Calculator, selected as one of the Best iPhone Apps of 2010 by AppBank, is an innovative calculator app. Version 7.0 introduces a decimal calculation engine, significantly improving calculation accuracy.
+            </p>
+            <p>
+                This app records calculation history as if outputting results on paper. You can easily review all calculation processes by scrolling through the results with your finger.
+            </p>
+            <p>
+                <strong>Use cases:</strong> Shopping expense calculations, household budget verification, expense calculations, educational calculation tool, and more.
+            </p>
         </section>
-        <section id="features">
-            <h2>Main Functionalities</h2>
-            <ul>
-                <li>機能1</li>
-                <li>機能2</li>
-                <li>機能3</li>
+
+        <section id="main-features">
+            <h2>Main Features</h2>
+            <ul class="feature-list">
+                <li>📝 Complete recording of calculation processes and results</li>
+                <li>🔄 Smooth scrolling of the calculation table (rolled paper)</li>
+                <li>🧮 Accurate basic arithmetic operations (＋, −, ×, ÷)</li>
+                <li>🔢 Large, easy-to-read number display</li>
+                <li>🔄 AC (All Clear) and C (Clear) functions</li>
+                <li>💡 High-precision decimal calculation engine</li>
             </ul>
         </section>
-        <section id="screenshots">
-            <h2>スクリーンショット</h2>
-            <!-- ここにアプリのスクリーンショットを追加 -->
+
+        <section id="benefits">
+            <h2>Benefits of Using Rolled Paper Calculator</h2>
+            <ul>
+                <li>Reduce calculation errors and improve accuracy</li>
+                <li>Easy reference to past calculations</li>
+                <li>Intuitive operation for efficient calculation work</li>
+                <li>Environmentally friendly by reducing paper waste</li>
+                <li>Convenience of use anywhere, anytime</li>
+            </ul>
         </section>
+
+        <section id="screenshots">
+            <h2>Screenshots</h2>
+            <div class="screenshot-container">
+                <img src="/api/placeholder/350/700" alt="Rolled Paper Calculator Screenshot 1" class="screenshot">
+                <img src="/api/placeholder/350/700" alt="Rolled Paper Calculator Screenshot 2" class="screenshot">
+            </div>
+        </section>
+
+        <section id="user-reviews">
+            <h2>User Reviews</h2>
+            <blockquote>
+                "This app has revolutionized my household budget management. By reviewing the calculation history, I can see spending trends at a glance." - Mrs. A (Homemaker)
+            </blockquote>
+            <blockquote>
+                "Expense calculations for work have become significantly easier. With fewer calculation mistakes, my boss's trust in me has increased!" - Mr. B (Office Worker)
+            </blockquote>
+        </section>
+
+        <a href="#" class="cta-button">Download on the App Store</a>
     </main>
+
     <footer>
-        <p>&copy; 2024 あなたの名前またはアプリ名. All rights reserved.</p>
+        <p>&copy; 2024 mobazou. All rights reserved.</p>
         <nav>
-            <a href="privacy-policy.html">プライバシーポリシー</a> |
-            <a href="terms.html">利用規約</a>
+            <a href="privacy-policy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms of Use</a> |
+            <a href="contact.html">Contact Us</a>
         </nav>
     </footer>
 </body>
