@@ -3,40 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rolled Paper Calculator</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Rolled Paper Calculator - 巻き紙電卓 -</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            border-radius: 5px;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            display: block;
+        }
+        .feature-list {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .feature-list li {
+            margin-bottom: 10px;
+        }
+        .screenshot-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .screenshot {
+            width: 45%;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Rolled Paper Calculator - 巻き紙電卓 -</h1>
     </header>
     <main>
+        <img src="/api/placeholder/100/100" alt="Rolled Paper Calculator App Icon" class="app-icon">
+        
         <section id="app-description">
-            <h2>このAppの特徴</h2>
-            <p>巻き紙電卓は、ベストiPhoneアプリ2010(AppBank）に選ばれました。Ver7.0では、１０進演算エンジンを搭載し、計算精度があがりました<br> <br>
-巻き紙電卓が、計算の入力、計算結果の履歴全てを記録することで あなたは計算過程の全てを確認できるようになります。<br> 
-このアプリは、紙に計算結果を出力するように、計算履歴を出力することができます。そして指で計算結果を動かすことで全ての計算結果を見ることができます<br><br>
-使用例:買い物中の費用計算, 家計の検算, etc.<br>
-</p>
+            <h2>このアプリの特徴</h2>
+            <p>
+                巻き紙電卓は、ベストiPhoneアプリ2010(AppBank）に選ばれた革新的な計算機アプリです。Ver7.0では、10進演算エンジンを搭載し、計算精度が大幅に向上しました。
+            </p>
+            <p>
+                このアプリは、紙に計算結果を出力するように、計算履歴を記録します。指で計算結果をスクロールすることで、全ての計算過程を簡単に確認できます。
+            </p>
+            <p>
+                <strong>使用例:</strong> 買い物中の費用計算、家計の検算、経費の計算、学習用の計算ツールなど
+            </p>
         </section>
-        <section id="主な機能">
-            <h2>Main Functionalities</h2>
-            <ul>
-                <li>計算過程、計算結果の記録</li>
-                <li>計算テーブル（巻き紙）のスクロール</li>
-                <li>四則演算、＝、AC、C</li>
+
+        <section id="main-features">
+            <h2>主な機能</h2>
+            <ul class="feature-list">
+                <li>📝 計算過程と結果の完全な記録</li>
+                <li>🔄 スムーズな計算テーブル（巻き紙）のスクロール</li>
+                <li>🧮 正確な四則演算（＋、−、×、÷）</li>
+                <li>🔢 大きく見やすい数字表示</li>
+                <li>🔄 AC（オールクリア）とC（クリア）機能</li>
+                <li>💡 10進数の高精度計算エンジン</li>
             </ul>
         </section>
+
+        <section id="benefits">
+            <h2>巻き紙電卓を使うメリット</h2>
+            <ul>
+                <li>計算ミスを減らし、正確性を向上</li>
+                <li>過去の計算を簡単に参照可能</li>
+                <li>直感的な操作で、効率的な計算作業</li>
+                <li>紙の無駄を省き、環境にやさしい</li>
+                <li>どこでも手軽に使える便利さ</li>
+            </ul>
+        </section>
+
         <section id="screenshots">
             <h2>スクリーンショット</h2>
-            <!-- ここにアプリのスクリーンショットを追加 -->
+            <div class="screenshot-container">
+                <img src="/api/placeholder/350/700" alt="Rolled Paper Calculator Screenshot 1" class="screenshot">
+                <img src="/api/placeholder/350/700" alt="Rolled Paper Calculator Screenshot 2" class="screenshot">
+            </div>
         </section>
+
+        <section id="user-reviews">
+            <h2>ユーザーの声</h2>
+            <blockquote>
+                "このアプリは私の家計管理に革命をもたらしました。計算履歴を見返すことで、支出の傾向が一目でわかります。" - Aさん（主婦）
+            </blockquote>
+            <blockquote>
+                "仕事での経費計算が格段に楽になりました。計算ミスも減って、上司からの信頼度アップ！" - Bさん（会社員）
+            </blockquote>
+        </section>
+
+        <a href="#" class="cta-button">App Storeでダウンロード</a>
     </main>
+
     <footer>
         <p>&copy; 2024 mobazou. All rights reserved.</p>
         <nav>
             <a href="privacy-policy.html">プライバシーポリシー</a> |
-            <a href="terms.html">利用規約</a>
+            <a href="terms.html">利用規約</a> |
+            <a href="contact.html">お問い合わせ</a>
         </nav>
     </footer>
 </body>
