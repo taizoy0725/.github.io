@@ -8,27 +8,35 @@
         function getLanguage() {
             return navigator.language || navigator.userLanguage;
         }
+        
         function redirect() {
             var lang = getLanguage().toLowerCase().substr(0, 2);
             var supportedLanguages = ['en', 'ja'];
-            var currentPath = window.location.pathname;
+            var currentPath = window.location.pathname.replace(/^\//, '');
+            
+            // Handle root path
+            if (currentPath === '') {
+                currentPath = '/';
+            }
             
             // Check if we're already in a language subdirectory
-            if (supportedLanguages.some(l => currentPath.startsWith('/' + l + '/'))) {
+            if (supportedLanguages.some(l => currentPath.startsWith(l + '/'))) {
                 return; // Already in a language subdirectory, no need to redirect
             }
             
-            if (currentPath !== '/app-ads.txt') {
+            // Don't redirect for specific file types
+            if (!currentPath.endsWith('.txt')) {
                 if (supportedLanguages.includes(lang)) {
-                    window.location.href = '/' + lang + currentPath;
+                    window.location.href = '/' + lang + '/' + currentPath;
                 } else {
                     // Redirect to default language (e.g., English)
-                    window.location.href = '/en' + currentPath;
+                    window.location.href = '/en/' + currentPath;
                 }
             }
         }
-        // Execute redirect on page load
-        window.onload = redirect;
+        
+        // Execute redirect when DOM is ready
+        document.addEventListener('DOMContentLoaded', redirect);
     </script>
 </head>
 <body>
