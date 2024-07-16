@@ -3,35 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Language Redirect</title>
+    <title>Language Redirect for GitHub Pages</title>
     <script>
+        // Configuration
+        var repositoryName = 'repository-name'; // Replace with your actual repository name
+        var supportedLanguages = ['en', 'ja'];
+        var defaultLanguage = 'en';
+
         function getLanguage() {
             return navigator.language || navigator.userLanguage;
         }
         
         function redirect() {
             var lang = getLanguage().toLowerCase().substr(0, 2);
-            var supportedLanguages = ['en', 'ja'];
-            var currentPath = window.location.pathname.replace(/^\//, '');
+            var path = window.location.pathname;
             
-            // Handle root path
-            if (currentPath === '') {
-                currentPath = '/';
-            }
+            // Remove leading slash and repository name from the path
+            var cleanPath = path.replace(new RegExp('^/?' + repositoryName + '/?'), '');
             
             // Check if we're already in a language subdirectory
-            if (supportedLanguages.some(l => currentPath.startsWith(l + '/'))) {
+            if (supportedLanguages.some(l => cleanPath.startsWith(l + '/'))) {
                 return; // Already in a language subdirectory, no need to redirect
             }
             
             // Don't redirect for specific file types
-            if (!currentPath.endsWith('.txt')) {
-                if (supportedLanguages.includes(lang)) {
-                    window.location.href =  '/' + lang + '/' + currentPath;
-                } else {
-                    // Redirect to default language (e.g., English)
-                    window.location.href =  '/en/'+currentPath;
-                }
+            if (!path.endsWith('.txt')) {
+                var targetLang = supportedLanguages.includes(lang) ? lang : defaultLanguage;
+                var newPath = '/' + repositoryName + '/' + targetLang + '/' + cleanPath.replace(/^\//, '');
+                window.location.href = newPath;
             }
         }
         
@@ -43,8 +42,8 @@
     <noscript>
         <p>JavaScript is disabled. Please select a language from the following links:</p>
         <ul>
-            <li><a href="/en/">English</a></li>
-            <li><a href="/ja/">日本語</a></li>
+            <li><a href="/repository-name/en/">English</a></li>
+            <li><a href="/repository-name/ja/">日本語</a></li>
         </ul>
     </noscript>
 </body>
