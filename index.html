@@ -27,7 +27,7 @@
             }
             
             // Don't redirect for specific file types
-            if (!path.endsWith('.txt')) {
+            if (cleanPath !== 'app-ads.txt') {
                 var targetLang = supportedLanguages.includes(lang) ? lang : defaultLanguage;
                 var newPath = '/' + repositoryName + '/' + targetLang + '/' + cleanPath.replace(/^\//, '');
                 window.location.href = newPath;
