@@ -13,13 +13,15 @@
         function redirect() {
             var lang = getLanguage();
             var supportedLanguages = ['en', 'ja'];
-            
-            if (supportedLanguages.indexOf(lang) !== -1) {
-                window.location.href = '/' + lang + '/';
-            } else {
-                // デフォルト言語（例：英語）にリダイレクト
-                window.location.href = '/en/';
-            }
+
+            if (window.location.pathname !== '/app-ads.txt') {
+                if (supportedLanguages.indexOf(lang) !== -1) {
+                    window.location.href = '/' + lang + '/';
+                } else {
+                    // デフォルト言語（例：英語）にリダイレクト
+                    window.location.href = '/en/';
+                }
+            ｝
         }
 
         // ページ読み込み時にリダイレクトを実行
