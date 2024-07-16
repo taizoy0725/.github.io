@@ -1,36 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>言語リダイレクト</title>
+    <title>Language Redirect</title>
     <script>
         function getLanguage() {
-            var lang = navigator.language || navigator.userLanguage;
-            return lang.toLowerCase().substr(0, 2);
+            return navigator.language || navigator.userLanguage;
         }
-
         function redirect() {
-            var lang = getLanguage();
+            var lang = getLanguage().toLowerCase().substr(0, 2);
             var supportedLanguages = ['en', 'ja'];
-
-            if (window.location.pathname !== '/app-ads.txt') {
-                if (supportedLanguages.indexOf(lang) !== -1) {
-                    window.location.href = '/' + lang + '/';
+            var currentPath = window.location.pathname;
+            
+            // Check if we're already in a language subdirectory
+            if (supportedLanguages.some(l => currentPath.startsWith('/' + l + '/'))) {
+                return; // Already in a language subdirectory, no need to redirect
+            }
+            
+            if (currentPath !== '/app-ads.txt') {
+                if (supportedLanguages.includes(lang)) {
+                    window.location.href = '/' + lang + currentPath;
                 } else {
-                    // デフォルト言語（例：英語）にリダイレクト
-                    window.location.href = '/en/';
+                    // Redirect to default language (e.g., English)
+                    window.location.href = '/en' + currentPath;
                 }
-            ｝
+            }
         }
-
-        // ページ読み込み時にリダイレクトを実行
+        // Execute redirect on page load
         window.onload = redirect;
     </script>
 </head>
 <body>
     <noscript>
-        <p>JavaScript is disabled. Please select a language from the following link.</p>
+        <p>JavaScript is disabled. Please select a language from the following links:</p>
         <ul>
             <li><a href="/en/">English</a></li>
             <li><a href="/ja/">日本語</a></li>
