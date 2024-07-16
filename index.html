@@ -27,10 +27,10 @@
             // Don't redirect for specific file types
             if (!currentPath.endsWith('.txt')) {
                 if (supportedLanguages.includes(lang)) {
-                    window.location.href = '/' + lang + '/' + currentPath;
+                    window.location.href = currentPath + '/' + lang + '/' ;
                 } else {
                     // Redirect to default language (e.g., English)
-                    window.location.href = '/en/' + currentPath;
+                    window.location.href = currentPath + '/en/' ;
                 }
             }
         }
