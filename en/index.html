@@ -3,149 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rolled Paper Calculator</title>
+    <title>Rolled Paper Calculator Lite - An Innovative Calculator with History and Easy-to-Use Features</title>
     <style>
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            border-radius: 5px;
-        }
-        header h1{
-            color: white;
         }
         h1, h2 {
             color: #2c3e50;
         }
-        .app-icon {
-            width: 100px;
-            height: 100px;
-            margin: 20px auto;
-            display: block;
-        }
-        .feature-list {
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .feature-list li {
-            margin-bottom: 10px;
-        }
-        .screenshot-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .screenshot {
-            width: 45%;
+        .feature {
             margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .feature h3 {
+            color: #3498db;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        p {
+            text-indent: 1em;
         }
         footer {
-            text-align: center;
             margin-top: 40px;
+            border-top: 1px solid #ddd;
             padding-top: 20px;
-            border-top: 1px solid #ccc;
+            text-align: center;
+            font-size: 0.9em;
         }
-        .cta-button {
+        footer p {
+            text-indent: 0;
+        }
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .download-button {
             display: inline-block;
-            background-color: #3498db;
+            background-color: #0070c9;
             color: white;
             padding: 10px 20px;
-            text-decoration: none;
             border-radius: 5px;
+            text-decoration: none;
             font-weight: bold;
             margin-top: 20px;
+            transition: background-color 0.3s;
         }
-        .cta-button:hover {
-            background-color: #2980b9;
+        .download-button:hover {
+            background-color: #005999;
+        }
+        .download-section {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .video-container {
+            max-width: 300px;
+            margin: 30px auto;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 177.78%; /* 16:9 inverse */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        @media (min-width: 768px) {
+            .video-container {
+                float: right;
+                margin: 0 0 20px 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Rolled Paper Calculator</h1>
-    </header>
-    <main>
-        <img src="/makidenlite/AppIcon.png" alt="Rolled Paper Calculator App Icon" class="app-icon">
-        
-        <section id="app-description">
-            <h2>App Features</h2>
-            <p>
-                The Rolled Paper Calculator, selected as one of the Best iPhone Apps of 2010 by AppBank, is an innovative calculator app. Version 7.0 introduces a decimal calculation engine, significantly improving calculation accuracy.
-            </p>
-            <p>
-                This app records calculation history as if outputting results on paper. You can easily review all calculation processes by scrolling through the results with your finger.
-            </p>
-            <p>
-                <strong>Use cases:</strong> Shopping expense calculations, household budget verification, expense calculations, educational calculation tool, and more.
-            </p>
-        </section>
+    <h1>Rolled Paper Calculator Lite</h1>
+    <h2>An Innovative Calculator with History and Easy-to-Use Features</h2>
+    
+    <p>Rolled Paper Calculator Lite is an innovative calculator app that combines ease of use with functionality. While maintaining the operability of traditional calculators, it features a function that displays calculation history like a roll of paper.</p>
 
-        <section id="main-features">
-            <h2>Main Features</h2>
-            <ul class="feature-list">
-                <li>📝 Complete recording of calculation processes and results</li>
-                <li>🔄 Smooth scrolling of the calculation table (rolled paper)</li>
-                <li>🧮 Accurate basic arithmetic operations (＋, −, ×, ÷)</li>
-                <li>🔢 Large, easy-to-read number display</li>
-                <li>🔄 AC (All Clear:Long Tap) and C (Clear:Short Tap) functions</li>
-                <li>💡 High-precision decimal calculation engine</li>
-            </ul>
-        </section>
+    <p>Selected as the Best iPhone App of 2010 by AppBank, it has been supported by many users. From Ver7.0, a decimal calculation engine has been incorporated, improving calculation accuracy. You can perform daily calculations more easily and accurately.</p>
 
-        <section id="benefits">
-            <h2>Benefits of Using Rolled Paper Calculator</h2>
-            <ul>
-                <li>Reduce calculation errors and improve accuracy</li>
-                <li>Easy reference to past calculations</li>
-                <li>Intuitive operation for efficient calculation work</li>
-                <li>Environmentally friendly by reducing paper waste</li>
-                <li>Convenience of use anywhere, anytime</li>
-            </ul>
-        </section>
+    <p><strong>Use cases:</strong> Calculating expenses while shopping, checking household accounts, calculating business expenses, as a calculation tool for learning, and more</p>
 
-        <section id="screenshots">
-            <h2>Screenshots</h2>
-            <div class="screenshot-container">
-                <img src="/makidenlite/screen1.png" alt="Rolled Paper Calculator Screenshot 1" class="screenshot">
-                <img src="/makidenlite/screen2.png" alt="Rolled Paper Calculator Screenshot 2" class="screenshot">
-            </div>
-        </section>
+    <div class="video-container">
+        <div class="video-wrapper">
+            <iframe src="https://youtube.com/shorts/vCC7ZqKtxOU?si=Gql7bSMQgAgGkwqO" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
 
-        <section id="user-reviews">
-            <h2>User Reviews</h2>
-            <blockquote>
-                "This app has revolutionized my household budget management. By reviewing the calculation history, I can see spending trends at a glance." - Mrs. A (Homemaker)
-            </blockquote>
-            <blockquote>
-                "Expense calculations for work have become significantly easier. With fewer calculation mistakes, my boss's trust in me has increased!" - Mr. B (Office Worker)
-            </blockquote>
-        </section>
+    <h2>Main Features</h2>
 
-        <a href="https://apps.apple.com/app/id390235996" class="cta-button">Download on the App Store</a>
-    </main>
+    <div class="feature">
+        <h3>1. Paper Roll Display</h3>
+        <p>Displays the calculation process like a paper roll, which can be checked at any time. You can easily review past calculation history by scrolling.</p>
+    </div>
+
+    <div class="feature">
+        <h3>2. Flexible Decimal Point Modes</h3>
+        <p>Equipped with three decimal point modes:</p>
+        <ul>
+            <li>F (Free): No limit on the number of decimal places</li>
+            <li>0 (Zero): Integer display only</li>
+            <li>2 (Euro mode): Display up to two decimal places</li>
+        </ul>
+        <p>Easily switchable with the "dp/VAT" button.</p>
+    </div>
+
+    <div class="feature">
+        <h3>3. Consumption Tax (VAT) Calculation Function</h3>
+        <p>Long-press the "dp/VAT" button to set the consumption tax rate. After setting, just use the "dp/VAT" button to enter +VAT mode for automatic tax-inclusive calculations.</p>
+    </div>
+
+    <div class="feature">
+        <h3>4. Scan Function</h3>
+        <p>Use the "SCAN" button to scan numbers from receipts or price lists and automatically input them. Particularly effective for correctly entering large numbers, such as for tax returns.</p>
+    </div>
+
+    <div class="feature">
+        <h3>5. Advanced Calculation Functions</h3>
+        <ul>
+            <li>Square Root Calculation: Easily calculate square roots with the "√" button.</li>
+            <li>Sign Inversion: Switch between positive and negative values with the "±↻" button.</li>
+            <li>Backspace Function: Delete the last digit in case of input errors.</li>
+            <li>Restore Function: Restore deleted numbers with the backspace function.</li>
+            <li>C/AC Function: Press the "C/AC" button to reset the current input or calculation result. Long-press to clear all content on the paper roll.</li>
+        </ul>
+    </div>
+
+    <div class="feature">
+        <h3>6. Copy Function</h3>
+        <p>Copy the calculation history displayed on the paper roll to the clipboard with the "copy" button.</p>
+    </div>
+
+    <div class="feature">
+        <h3>7. Total Calculation Function</h3>
+        <p>The "=/Σ" button displays the normal calculation result. Long-press to calculate the sum of all calculation results displayed on the paper roll.</p>
+    </div>
+
+    <div class="feature">
+        <h3>8. User-Friendly Interface</h3>
+        <ul>
+            <li>Intuitive operation</li>
+            <li>Clear display</li>
+            <li>Dark mode support</li>
+        </ul>
+    </div>
+
+    <h2>Supported Devices</h2>
+    <p>Available on iPhone, iPad, and Mac (Apple Silicon). Optimized layouts for each device's screen size.</p>
+
+    <h2>Privacy and Advertisements</h2>
+    <p>We respect user privacy and have implemented App Tracking Transparency. Users can choose between personalized or non-personalized advertisements based on their preference.</p>
+
+    <div class="download-section">
+        <p>Download from the App Store and start a new calculation experience!</p>
+        <a href="https://apps.apple.com/app/id390235996" class="download-button">Download on the App Store</a>
+    </div>
 
     <footer>
         <p>&copy; 2024 mobazou. All rights reserved.</p>
-        <nav>
+        <p>
             <a href="/makidenlite/en/privacy-policy.html">Privacy Policy</a> |
             <a href="/makidenlite/en/terms.html">Terms of Use</a> |
             <a href="https://www.facebook.com/mobazoiPhoneApp">Contact Us</a>
-        </nav>
+        </p>
     </footer>
 </body>
 </html>
