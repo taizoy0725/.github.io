@@ -3,158 +3,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rolled Paper Calculator - 巻き紙電卓 -</title>
+    <title>巻き紙電卓 Lite - 履歴が残ってシンプルで使いやすい革新的な計算機</title>
     <style>
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f4f4f4;
         }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            border-radius: 5px;
-        }
-        header h1 {
-            color: white;
-        }
-        h1,h2 {
+        h1, h2 {
             color: #2c3e50;
         }
-        .app-icon {
-            width: 100px;
-            height: 100px;
-            margin: 20px auto;
-            display: block;
-        }
-        .feature-list {
-            background-color: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .feature-list li {
-            margin-bottom: 10px;
-        }
-        .screenshot-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .screenshot {
-            width: 45%;
+        .feature {
             margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .feature h3 {
+            color: #3498db;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        p {
+            text-indent: 1em;
         }
         footer {
-            text-align: center;
             margin-top: 40px;
+            border-top: 1px solid #ddd;
             padding-top: 20px;
-            border-top: 1px solid #ccc;
+            text-align: center;
+            font-size: 0.9em;
         }
-        .cta-button {
+        footer p {
+            text-indent: 0;
+        }
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .download-button {
             display: inline-block;
-            background-color: #3498db;
+            background-color: #0070c9;
             color: white;
             padding: 10px 20px;
-            text-decoration: none;
             border-radius: 5px;
+            text-decoration: none;
             font-weight: bold;
             margin-top: 20px;
+            transition: background-color 0.3s;
         }
-        .cta-button:hover {
-            background-color: #2980b9;
+        .download-button:hover {
+            background-color: #005999;
+        }
+        .download-section {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .video-container {
+            max-width: 300px;
+            margin: 30px auto;
+        }
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 177.78%; /* 16:9 の逆 */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        @media (min-width: 768px) {
+            .video-container {
+                float: right;
+                margin: 0 0 20px 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Rolled Paper Calculator - 巻き紙電卓 -</h1>
-    </header>
-    <main>
-        <img src="/makidenlite/AppIcon.png" alt="Rolled Paper Calculator App Icon" class="app-icon">
-        
-        <section id="app-description">
-            <h2>このアプリの特徴</h2>
-            <p>
-                巻き紙電卓は、ベストiPhoneアプリ2010(AppBank）に選ばれた革新的な計算機アプリです。Ver7.0では、10進演算エンジンを搭載し、計算精度が大幅に向上しました。
-            </p>
-            <p>
-                このアプリは、紙に計算結果を出力するように、計算履歴を記録します。指で計算結果をスクロールすることで、全ての計算過程を簡単に確認できます。
-            </p>
-            <p>
-                <strong>使用例:</strong> 買い物中の費用計算、家計の検算、経費の計算、学習用の計算ツールなど
-            </p>
-        </section>
+    <h1>巻き紙電卓 Lite</h1>
+    <h2>履歴が残ってシンプルで使いやすい革新的な計算機</h2>
+    
+    <p>巻き紙電卓 Liteは、使いやすさと機能性を兼ね備えた革新的な計算機アプリです。従来の電卓の操作性はそのままに、計算履歴を巻紙のように表示する機能を搭載しています。</p>
 
-        <section id="main-features">
-            <h2>主な機能</h2>
-            <ul class="feature-list">
-                <li>📝 計算過程と結果の完全な記録</li>
-                <li>🔄 スムーズな計算テーブル（巻き紙）のスクロール</li>
-                <li>🧮 正確な四則演算（＋、−、×、÷）</li>
-                <li>🔢 大きく見やすい数字表示</li>
-                <li>🔄 AC（オールクリア）とC（クリア）機能：　短押しでC、長押しでAC</li>
-                <li>💡 10進数の高精度計算エンジン</li>
-            </ul>
-        </section>
+    <p>AppBankのベストiPhoneアプリ2010に選ばれ、多くのユーザーから支持されています。Ver7.0からは10進演算エンジンを搭載し計算精度が向上しました。日々の計算をより簡単に、そして正確に行うことができます。</p>
 
-        <section id="benefits">
-            <h2>巻き紙電卓を使うメリット</h2>
-            <ul>
-                <li>計算ミスを減らし、正確性を向上</li>
-                <li>過去の計算を簡単に参照可能</li>
-                <li>直感的な操作で、効率的な計算作業</li>
-                <li>紙の無駄を省き、環境にやさしい</li>
-                <li>どこでも手軽に使える便利さ</li>
-            </ul>
-        </section>
+    <p><strong>使用例:</strong> 買い物中の費用計算、家計の検算、経費の計算、学習用の計算ツールなど</p>
 
-        <section id="screenshots">
-            <h2>スクリーンショット</h2>
-            <div class="screenshot-container">
-                <img src="/makidenlite/screen1.png" alt="Rolled Paper Calculator Screenshot 1" class="screenshot">
-                <img src="/makidenlite/screen2.png" alt="Rolled Paper Calculator Screenshot 2" class="screenshot">
-            </div>
-        </section>
+    <div class="video-container">
+        <div class="video-wrapper">
+            <iframe src="https://youtube.com/shorts/vCC7ZqKtxOU?si=Gql7bSMQgAgGkwqO" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
 
-        <section id="user-reviews">
-            <h2>ユーザーの声</h2>
-            <blockquote>
-                "このアプリは私の家計管理に革命をもたらしました。計算履歴を見返すことで、支出の傾向が一目でわかります。" - Aさん（主婦）
-            </blockquote>
-            <blockquote>
-                "仕事での経費計算が格段に楽になりました。計算ミスも減って、上司からの信頼度アップ！" - Bさん（会社員）
-            </blockquote>
-        </section>
+    <h2>主な機能</h2>
 
-        <a href="https://apps.apple.com/app/id390235996" class="cta-button">App Storeでダウンロード</a>
+    <div class="feature">
+        <h3>1. 巻紙表示</h3>
+        <p>計算の過程を巻紙のように表示し、いつでも確認できます。スクロールで過去の計算履歴を簡単に見返すことができます。</p>
+    </div>
 
-        <section id="screenshots">
-            <h2>スクリーンショット</h2>
-            <div class="screenshot-container">
-                <img src="/makidenlite/swiftUI.png" alt="Development by SwiftUI" class="screenshot">
-            </div>
-        </section>
+    <div class="feature">
+        <h3>2. 柔軟な小数点モード</h3>
+        <p>3つの小数点モードを搭載：</p>
+        <ul>
+            <li>F (フリー): 小数点以下の桁数を制限しません</li>
+            <li>0 (ゼロ): 整数のみの表示</li>
+            <li>2 (ユーロモード): 小数点以下2桁までの表示</li>
+        </ul>
+        <p>「dp/VAT」ボタンで簡単に切り替えられます。</p>
+    </div>
 
-        
-    </main>
+    <div class="feature">
+        <h3>3. 消費税（VAT）計算機能</h3>
+        <p>「dp/VAT」ボタンを長押しすることで、消費税率を設定できます。設定後は「dp/VAT」ボタンで+VATモードにするだけで自動的に税額を付加した計算が可能です。</p>
+    </div>
+
+    <div class="feature">
+        <h3>4. スキャン機能</h3>
+        <p>「SCAN」ボタンを使用して、レシートや価格表から数字をスキャンし、自動的に入力できます。特に税務申告などで桁の多い数値を正しく入力する上で有効です。</p>
+    </div>
+
+    <div class="feature">
+        <h3>5. 高度な計算機能</h3>
+        <ul>
+            <li>平方根計算: 「√」ボタンで簡単に平方根を計算できます。</li>
+            <li>符号反転: 「±↻」ボタンで数値の正負を切り替えられます。</li>
+            <li>バックスペース機能: 誤入力した場合、最後の桁から削除できます。</li>
+            <li>リストア機能: バックスペースで削除した数字を元に戻すことができます。</li>
+            <li>C/AC機能: 「C/AC」ボタンを押すと入力中の文字や計算結果がリセットされます。長押しすると巻紙の内容が全て消去されます。</li>
+        </ul>
+    </div>
+
+    <div class="feature">
+        <h3>6. コピー機能</h3>
+        <p>「copy」ボタンで、巻紙に表示されている計算履歴をクリップボードにコピーできます。</p>
+    </div>
+
+    <div class="feature">
+        <h3>7. 合計計算機能</h3>
+        <p>「＝／Σ」ボタンで通常の計算結果が表示されます。長押しすることで、巻紙に表示されているすべての計算結果の合計を算出できます。</p>
+    </div>
+
+    <div class="feature">
+        <h3>8. ユーザーフレンドリーなインターフェース</h3>
+        <ul>
+            <li>直感的な操作方法</li>
+            <li>クリアな表示</li>
+            <li>ダークモード対応</li>
+        </ul>
+    </div>
+
+    <h2>対応デバイス</h2>
+    <p>iPhone、iPad、そしてMac（Apple Silicon）で利用可能です。各デバイスの画面サイズに最適化されたレイアウトを提供します。</p>
+
+    <h2>プライバシーと広告</h2>
+    <p>ユーザーのプライバシーを尊重し、App Tracking Transparencyを導入しています。ユーザーの選択に応じて、パーソナライズ広告または非パーソナライズ広告を表示します。</p>
+
+    <div class="download-section">
+        <p>App Storeからダウンロードして、新しい計算体験を始めましょう！</p>
+        <a href="https://apps.apple.com/app/id390235996" class="download-button">AppStoreでダウンロード</a>
+    </div>
 
     <footer>
         <p>&copy; 2024 mobazou. All rights reserved.</p>
-        <nav>
+        <p>
             <a href="/makidenlite/ja/privacy-policy.html">プライバシーポリシー</a> |
             <a href="/makidenlite/ja/terms.html">利用規約</a> |
             <a href="https://www.facebook.com/mobazoiPhoneApp">お問い合わせ</a>
-        </nav>
+        </p>
     </footer>
 </body>
 </html>
