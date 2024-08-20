@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>巻き紙電卓 - 革新的な計算機アプリ</title>
     <style>
-        /* ここにCSSスタイルを追加 */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolled Paper Calculator - An Innovative Calculator with History and Easy-to-Use Features</title>
+    <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -14,43 +20,77 @@
             margin: 0 auto;
             padding: 20px;
         }
-        h1, h2, h3 {
+        h1, h2 {
             color: #2c3e50;
         }
         .feature {
-            background-color: #f9f9f9;
-            border-radius: 5px;
-            padding: 15px;
             margin-bottom: 20px;
+        }
+        .feature h3 {
+            color: #3498db;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        p {
+            text-indent: 1em;
+        }
+        footer {
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        footer p {
+            text-indent: 0;
+        }
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .download-button {
+            display: inline-block;
+            background-color: #0070c9;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .download-button:hover {
+            background-color: #005999;
         }
         .download-section {
             text-align: center;
             margin-top: 30px;
+            margin-bottom: 30px;
         }
-        .download-button {
-            display: inline-block;
-            background-color: #3498db;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-        }
-        .video-wrapper {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 360px; /* 必要に応じて変更可能 */
+    height: auto;
+    aspect-ratio: 9 / 16; /* 縦型動画に適したアスペクト比を指定 */
+    margin: auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
     </style>
-</head>
+</head></head>
 <body>
     <header>
         <h1>巻き紙電卓</h1>
