@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rolled Paper Calculator - An Innovative Calculator with History and Easy-to-Use Features</title>
+    <title>Makiden Lite - Innovative Calculator App</title>
     <style>
+        /* CSS styles remain the same */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -13,161 +14,153 @@
             margin: 0 auto;
             padding: 20px;
         }
-        h1, h2 {
+        h1, h2, h3 {
             color: #2c3e50;
         }
         .feature {
-            margin-bottom: 20px;
-        }
-        .feature h3 {
-            color: #3498db;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        p {
-            text-indent: 1em;
-        }
-        footer {
-            margin-top: 40px;
-            border-top: 1px solid #ddd;
-            padding-top: 20px;
-            text-align: center;
-            font-size: 0.9em;
-        }
-        footer p {
-            text-indent: 0;
-        }
-        footer a {
-            color: #3498db;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        .download-button {
-            display: inline-block;
-            background-color: #0070c9;
-            color: white;
-            padding: 10px 20px;
+            background-color: #f9f9f9;
             border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
-        .download-button:hover {
-            background-color: #005999;
+            padding: 15px;
+            margin-bottom: 20px;
         }
         .download-section {
             text-align: center;
             margin-top: 30px;
-            margin-bottom: 30px;
         }
-.video-container {
-    position: relative;
-    width: 100%;
-    max-width: 360px; /* 必要に応じて変更可能 */
-    height: auto;
-    aspect-ratio: 9 / 16; /* 縦型動画に適したアスペクト比を指定 */
-    margin: auto;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+        .download-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
-    <h1>Rolled Paper Calculator</h1>
-    <h2>An Innovative Calculator with History and Easy-to-Use Features</h2>
+    <header>
+        <h1>Makiden Lite</h1>
+    </header>
     
-    <p>Rolled Paper Calculator is an innovative calculator app that combines ease of use with functionality. While maintaining the operability of traditional calculators, it features a function that displays calculation history like a roll of paper.</p>
+    <main>
+        <section>
+            <h2>An Innovative Calculator with History and Simplicity</h2>
+            <p>Makiden Lite is a revolutionary calculator app that combines ease of use with powerful functionality. It maintains the familiar operations of a traditional calculator while introducing a unique paper roll display for calculation history.</p>
+            <p>Recognized as one of the Best iPhone Apps of 2010 by AppBank, it has gained widespread user appreciation. Since version 7.0, it has incorporated a decimal arithmetic engine, enhancing calculation accuracy. Make your daily calculations easier and more precise.</p>
+            <p><strong>Use cases:</strong><br>Shopping expense calculations, household budget verifications, business expense calculations, educational math tool, and more.</p>
+        </section>
 
-    <p>Selected as the Best iPhone App of 2010 by AppBank, it has been supported by many users. From Ver7.0, a decimal calculation engine has been incorporated, improving calculation accuracy. You can perform daily calculations more easily and accurately.</p>
+        <section class="video-container">
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kPfCOB3GlhI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
 
-    <p><strong>Use cases:</strong> Calculating expenses while shopping, checking household accounts, calculating business expenses, as a calculation tool for learning, and more</p>
+        <section>
+            <h2>Key Features</h2>
 
-    <div class="video-container">
-        <div class="video-wrapper">
-            <iframe src="https://youtube.com/embed/vCC7ZqKtxOU?si=Gql7bSMQgAgGkwqO" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="feature">
+                <h3>1. Paper Roll Display</h3>
+                <p>View your calculation process as if on a paper roll, allowing you to check your work at any time. Easily review past calculations by scrolling.</p>
+            </div>
+
+            <div class="feature">
+                <h3>2. Standard/Advanced Keyboard Switch</h3>
+                <p>New feature: Choose between Standard and Advanced keyboard modes to suit your preferences and calculation needs.</p>
+                <ul>
+                    <li>Standard: Offers simple, easy-to-use basic calculator functions</li>
+                    <li>Advanced: Provides an extended keyboard with more advanced features</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>3. Flexible Decimal Point Modes</h3>
+                <p>Three decimal point modes available:</p>
+                <ul>
+                    <li>F (Free): No limit on decimal places</li>
+                    <li>0 (Zero): Integer-only display</li>
+                    <li>2 (Euro mode): Display up to 2 decimal places</li>
+                </ul>
+                <p>Easily switch using the "dp/VAT" button (Advanced mode).</p>
+            </div>
+
+            <div class="feature">
+                <h3>4. VAT Calculation Feature</h3>
+                <p>In Advanced mode, long-press the "dp/VAT" button to set the VAT rate. Once set, simply activate +VAT mode with the "dp/VAT" button to automatically include tax in your calculations.</p>
+            </div>
+
+            <div class="feature">
+                <h3>5. Scanning Function</h3>
+                <p>Use the "SCAN" button in Advanced mode to scan numbers from receipts or price lists for automatic input. Particularly useful for accurately entering large numbers, such as for tax returns.</p>
+            </div>
+
+            <div class="feature">
+                <h3>6. Advanced Calculation Features</h3>
+                <ul>
+                    <li>Square Root: Easily calculate square roots with the "√" button.</li>
+                    <li>Sign Toggle: Switch between positive and negative numbers with the "±↻" button.</li>
+                    <li>Backspace Function: Delete the last digit in case of input errors (Advanced mode).</li>
+                    <li>Restore Function: Recover deleted digits (Advanced mode).</li>
+                    <li>C/AC Function: Press "C/AC" to reset the current input or calculation result. Long-press to clear all content from the paper roll.</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>7. Copy Function</h3>
+                <p>In Advanced mode, use the "copy" button to copy the calculation history displayed on the paper roll to your clipboard.</p>
+            </div>
+
+            <div class="feature">
+                <h3>8. Total Calculation Function</h3>
+                <p>The "=/Σ" button displays normal calculation results. In Advanced mode, long-press to calculate the sum of all results shown on the paper roll.</p>
+            </div>
+
+            <div class="feature">
+                <h3>9. User-Friendly Interface</h3>
+                <ul>
+                    <li>Intuitive operation</li>
+                    <li>Clear display</li>
+                    <li>Dark mode support</li>
+                    <li>Easy switching between Standard and Advanced modes</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Supported Devices</h2>
+            <p>Available on iPhone, iPad, and Mac (Apple Silicon). Layouts are optimized for each device's screen size.</p>
+        </section>
+
+        <section>
+            <h2>Privacy and Advertising</h2>
+            <p>We respect user privacy and have implemented App Tracking Transparency. Users can choose between personalized or non-personalized ads based on their preference.</p>
+        </section>
+
+        <div class="download-section">
+            <p>Download from the App Store and start a new calculation experience!</p>
+            <a href="https://apps.apple.com/app/id390235996" class="download-button">Download on the App Store</a>
         </div>
-    </div>
-
-    <h2>Main Features</h2>
-    <div class="feature">
-        <h3>2. Flexible Decimal Point Modes</h3>
-        <p>Equipped with three decimal point modes:</p>
-        <ul>
-            <li>F (Free): No limit on the number of decimal places</li>
-            <li>0 (Zero): Integer display only</li>
-            <li>2 (Euro mode): Display up to two decimal places</li>
-        </ul>
-        <p>Easily switchable with the "dp/VAT" button.</p>
-    </div>
-
-    <div class="feature">
-        <h3>3. Consumption Tax (VAT) Calculation Function</h3>
-        <p>Long-press the "dp/VAT" button to set the consumption tax rate. After setting, just use the "dp/VAT" button to enter +VAT mode for automatic tax-inclusive calculations.</p>
-    </div>
-
-    <div class="feature">
-        <h3>4. Scan Function</h3>
-        <p>Use the "SCAN" button to scan numbers from receipts or price lists and automatically input them. Particularly effective for correctly entering large numbers, such as for tax returns.</p>
-    </div>
-
-    <div class="feature">
-        <h3>5. Advanced Calculation Functions</h3>
-        <ul>
-            <li>Square Root Calculation: Easily calculate square roots with the "√" button.</li>
-            <li>Sign Inversion: Switch between positive and negative values with the "±↻" button.</li>
-            <li>Backspace Function: Delete the last digit in case of input errors.</li>
-            <li>Restore Function: Restore deleted numbers with the backspace function.</li>
-            <li>C/AC Function: Press the "C/AC" button to reset the current input or calculation result. Long-press to clear all content on the paper roll.</li>
-        </ul>
-    </div>
-
-    <div class="feature">
-        <h3>6. Copy Function</h3>
-        <p>Copy the calculation history displayed on the paper roll to the clipboard with the "copy" button.</p>
-    </div>
-
-    <div class="feature">
-        <h3>7. Total Calculation Function</h3>
-        <p>The "=/Σ" button displays the normal calculation result. Long-press to calculate the sum of all calculation results displayed on the paper roll.</p>
-    </div>
-
-    <div class="feature">
-        <h3>8. User-Friendly Interface</h3>
-        <ul>
-            <li>Intuitive operation</li>
-            <li>Clear display</li>
-            <li>Dark mode support</li>
-        </ul>
-    </div>
-
-    <h2>Supported Devices</h2>
-    <p>Available on iPhone, iPad, and Mac (Apple Silicon). Optimized layouts for each device's screen size.</p>
-
-    <h2>Privacy and Advertisements</h2>
-    <p>We respect user privacy and have implemented App Tracking Transparency. Users can choose between personalized or non-personalized advertisements based on their preference.</p>
-
-    <div class="download-section">
-        <p>Download from the App Store and start a new calculation experience!</p>
-        <a href="https://apps.apple.com/app/id390235996" class="download-button">Download on the App Store</a>
-    </div>
+    </main>
 
     <footer>
-        <p>&copy; 2024 mobazou. All rights reserved.</p>
+        <p>© 2024 mobazou. All rights reserved.</p>
         <p>
-            <a href="/makidenlite/en/privacy-policy.html">Privacy Policy</a> |
-            <a href="/makidenlite/en/terms.html">Terms of Use</a> |
+            <a href="/makidenlite/en/privacy-policy.html">Privacy Policy</a> | 
+            <a href="/makidenlite/en/terms.html">Terms of Use</a> | 
             <a href="https://www.facebook.com/mobazoiPhoneApp">Contact Us</a>
         </p>
     </footer>
