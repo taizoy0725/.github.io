@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>巻き紙電卓 - 履歴が残ってシンプルで使いやすい革新的な計算機</title>
+    <title>巻き紙電卓 - 革新的な計算機アプリ</title>
     <style>
+        /* ここにCSSスタイルを追加 */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -13,167 +14,153 @@
             margin: 0 auto;
             padding: 20px;
         }
-        h1, h2 {
+        h1, h2, h3 {
             color: #2c3e50;
         }
         .feature {
-            margin-bottom: 20px;
-        }
-        .feature h3 {
-            color: #3498db;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        p {
-            text-indent: 1em;
-        }
-        footer {
-            margin-top: 40px;
-            border-top: 1px solid #ddd;
-            padding-top: 20px;
-            text-align: center;
-            font-size: 0.9em;
-        }
-        footer p {
-            text-indent: 0;
-        }
-        footer a {
-            color: #3498db;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        .download-button {
-            display: inline-block;
-            background-color: #0070c9;
-            color: white;
-            padding: 10px 20px;
+            background-color: #f9f9f9;
             border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
-        .download-button:hover {
-            background-color: #005999;
+            padding: 15px;
+            margin-bottom: 20px;
         }
         .download-section {
             text-align: center;
             margin-top: 30px;
-            margin-bottom: 30px;
-        } 
-.video-container {
-    position: relative;
-    width: 100%;
-    max-width: 360px; /* 必要に応じて変更可能 */
-    height: auto;
-    aspect-ratio: 9 / 16; /* 縦型動画に適したアスペクト比を指定 */
-    margin: auto;
-}
-
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+        }
+        .download-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        .video-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
-    <h1>巻き紙電卓</h1>
-    <h2>履歴が残ってシンプルで使いやすい革新的な計算機</h2>
+    <header>
+        <h1>巻き紙電卓</h1>
+    </header>
     
-    <p>巻き紙電卓は、使いやすさと機能性を兼ね備えた革新的な計算機アプリです。従来の電卓の操作性はそのままに、計算履歴を巻紙のように表示する機能を搭載しています。</p>
+    <main>
+        <section>
+            <h2>履歴が残ってシンプルで使いやすい革新的な計算機</h2>
+            <p>巻き紙電卓は、使いやすさと機能性を兼ね備えた革新的な計算機アプリです。従来の電卓の操作性はそのままに、計算履歴を巻紙のように表示する機能を搭載しています。</p>
+            <p>AppBankのベストiPhoneアプリ2010に選ばれ、多くのユーザーから支持されています。Ver7.0からは10進演算エンジンを搭載し計算精度が向上しました。日々の計算をより簡単に、そして正確に行うことができます。</p>
+            <p><strong>使用例:</strong><br>買い物中の費用計算、家計の検算、経費の計算、学習用の計算ツールなど</p>
+        </section>
 
-    <p>AppBankのベストiPhoneアプリ2010に選ばれ、多くのユーザーから支持されています。Ver7.0からは10進演算エンジンを搭載し計算精度が向上しました。日々の計算をより簡単に、そして正確に行うことができます。</p>
-
-    <p><strong>使用例:</strong> 買い物中の費用計算、家計の検算、経費の計算、学習用の計算ツールなど</p>
-
-    <div class="video-container">
-        <div class="video-wrapper">
+        <section class="video-container">
+            <div class="video-wrapper">
             <iframe src="https://www.youtube.com/embed/vCC7ZqKtxOU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section>
+            <h2>主な機能</h2>
+
+            <div class="feature">
+                <h3>1. 巻紙表示</h3>
+                <p>計算の過程を巻紙のように表示し、いつでも確認できます。スクロールで過去の計算履歴を簡単に見返すことができます。</p>
+            </div>
+
+            <div class="feature">
+                <h3>2. Standard/Advancedキーボード切り替え</h3>
+                <p>新機能として、StandardとAdvancedの2つのキーボードモードを搭載しました。ユーザーの好みや計算のニーズに合わせて簡単に切り替えられます。</p>
+                <ul>
+                    <li>Standard: シンプルで使いやすい基本的な計算機能を提供</li>
+                    <li>Advanced: より高度な機能を備えた拡張キーボード</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>3. 柔軟な小数点モード</h3>
+                <p>3つの小数点モードを搭載：</p>
+                <ul>
+                    <li>F (フリー): 小数点以下の桁数を制限しません</li>
+                    <li>0 (ゼロ): 整数のみの表示</li>
+                    <li>2 (ユーロモード): 小数点以下2桁までの表示</li>
+                </ul>
+                <p>「dp/VAT」ボタン（Advancedモード）で簡単に切り替えられます。</p>
+            </div>
+
+            <div class="feature">
+                <h3>4. 消費税（VAT）計算機能</h3>
+                <p>Advancedモードの「dp/VAT」ボタンを長押しすることで、消費税率を設定できます。設定後は「dp/VAT」ボタンで+VATモードにするだけで自動的に税額を付加した計算が可能です。</p>
+            </div>
+
+            <div class="feature">
+                <h3>5. スキャン機能</h3>
+                <p>Advancedモードの「SCAN」ボタンを使用して、レシートや価格表から数字をスキャンし、自動的に入力できます。特に税務申告などで桁の多い数値を正しく入力する上で有効です。</p>
+            </div>
+
+            <div class="feature">
+                <h3>6. 高度な計算機能</h3>
+                <ul>
+                    <li>平方根計算: 「√」ボタンで簡単に平方根を計算できます。</li>
+                    <li>符号反転: 「±↻」ボタンで数値の正負を切り替えられます。</li>
+                    <li>バックスペース機能: 誤入力した場合、最後の桁から削除できます（Advancedモード）。</li>
+                    <li>リストア機能: バックスペースで削除した数字を元に戻すことができます（Advancedモード）。</li>
+                    <li>C/AC機能: 「C/AC」ボタンを押すと入力中の文字や計算結果がリセットされます。長押しすると巻紙の内容が全て消去されます。</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>7. コピー機能</h3>
+                <p>Advancedモードの「copy」ボタンで、巻紙に表示されている計算履歴をクリップボードにコピーできます。</p>
+            </div>
+
+            <div class="feature">
+                <h3>8. 合計計算機能</h3>
+                <p>「＝／Σ」ボタンで通常の計算結果が表示されます。Advancedモードでは長押しすることで、巻紙に表示されているすべての計算結果の合計を算出できます。</p>
+            </div>
+
+            <div class="feature">
+                <h3>9. ユーザーフレンドリーなインターフェース</h3>
+                <ul>
+                    <li>直感的な操作方法</li>
+                    <li>クリアな表示</li>
+                    <li>ダークモード対応</li>
+                    <li>Standard/Advancedモードの簡単切り替え</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>対応デバイス</h2>
+            <p>iPhone、iPad、そしてMac（Apple Silicon）で利用可能です。各デバイスの画面サイズに最適化されたレイアウトを提供します。</p>
+        </section>
+
+        <section>
+            <h2>プライバシーと広告</h2>
+            <p>ユーザーのプライバシーを尊重し、App Tracking Transparencyを導入しています。ユーザーの選択に応じて、パーソナライズ広告または非パーソナライズ広告を表示します。</p>
+        </section>
+
+        <div class="download-section">
+            <p>App Storeからダウンロードして、新しい計算体験を始めましょう！</p>
+            <a href="https://apps.apple.com/app/id390235996" class="download-button">AppStoreでダウンロード</a>
         </div>
-    </div>
-    
-    <h2>主な機能</h2>
-
-    <div class="feature">
-        <h3>1. 巻紙表示</h3>
-        <p>計算の過程を巻紙のように表示し、いつでも確認できます。スクロールで過去の計算履歴を簡単に見返すことができます。</p>
-    </div>
-
-    <div class="feature">
-        <h3>2. 柔軟な小数点モード</h3>
-        <p>3つの小数点モードを搭載：</p>
-        <ul>
-            <li>F (フリー): 小数点以下の桁数を制限しません</li>
-            <li>0 (ゼロ): 整数のみの表示</li>
-            <li>2 (ユーロモード): 小数点以下2桁までの表示</li>
-        </ul>
-        <p>「dp/VAT」ボタンで簡単に切り替えられます。</p>
-    </div>
-
-    <div class="feature">
-        <h3>3. 消費税（VAT）計算機能</h3>
-        <p>「dp/VAT」ボタンを長押しすることで、消費税率を設定できます。設定後は「dp/VAT」ボタンで+VATモードにするだけで自動的に税額を付加した計算が可能です。</p>
-    </div>
-
-    <div class="feature">
-        <h3>4. スキャン機能</h3>
-        <p>「SCAN」ボタンを使用して、レシートや価格表から数字をスキャンし、自動的に入力できます。特に税務申告などで桁の多い数値を正しく入力する上で有効です。</p>
-    </div>
-
-    <div class="feature">
-        <h3>5. 高度な計算機能</h3>
-        <ul>
-            <li>平方根計算: 「√」ボタンで簡単に平方根を計算できます。</li>
-            <li>符号反転: 「±↻」ボタンで数値の正負を切り替えられます。</li>
-            <li>バックスペース機能: 誤入力した場合、最後の桁から削除できます。</li>
-            <li>リストア機能: バックスペースで削除した数字を元に戻すことができます。</li>
-            <li>C/AC機能: 「C/AC」ボタンを押すと入力中の文字や計算結果がリセットされます。長押しすると巻紙の内容が全て消去されます。</li>
-        </ul>
-    </div>
-
-    <div class="feature">
-        <h3>6. コピー機能</h3>
-        <p>「copy」ボタンで、巻紙に表示されている計算履歴をクリップボードにコピーできます。</p>
-    </div>
-
-    <div class="feature">
-        <h3>7. 合計計算機能</h3>
-        <p>「＝／Σ」ボタンで通常の計算結果が表示されます。長押しすることで、巻紙に表示されているすべての計算結果の合計を算出できます。</p>
-    </div>
-
-    <div class="feature">
-        <h3>8. ユーザーフレンドリーなインターフェース</h3>
-        <ul>
-            <li>直感的な操作方法</li>
-            <li>クリアな表示</li>
-            <li>ダークモード対応</li>
-        </ul>
-    </div>
-
-    <h2>対応デバイス</h2>
-    <p>iPhone、iPad、そしてMac（Apple Silicon）で利用可能です。各デバイスの画面サイズに最適化されたレイアウトを提供します。</p>
-
-    <h2>プライバシーと広告</h2>
-    <p>ユーザーのプライバシーを尊重し、App Tracking Transparencyを導入しています。ユーザーの選択に応じて、パーソナライズ広告または非パーソナライズ広告を表示します。</p>
-
-    <div class="download-section">
-        <p>App Storeからダウンロードして、新しい計算体験を始めましょう！</p>
-        <a href="https://apps.apple.com/app/id390235996" class="download-button">AppStoreでダウンロード</a>
-    </div>
+    </main>
 
     <footer>
-        <p>&copy; 2024 mobazou. All rights reserved.</p>
+        <p>© 2024 mobazou. All rights reserved.</p>
         <p>
-            <a href="/makidenlite/ja/privacy-policy.html">プライバシーポリシー</a> |
-            <a href="/makidenlite/ja/terms.html">利用規約</a> |
+            <a href="/makidenlite/ja/privacy-policy.html">プライバシーポリシー</a> | 
+            <a href="/makidenlite/ja/terms.html">利用規約</a> | 
             <a href="https://www.facebook.com/mobazoiPhoneApp">お問い合わせ</a>
         </p>
     </footer>
