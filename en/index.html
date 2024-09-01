@@ -36,19 +36,22 @@
             border-radius: 5px;
             font-weight: bold;
         }
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-        }
-        .video-wrapper {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 360px; /* 必要に応じて変更可能 */
+    height: auto;
+    aspect-ratio: 9 / 16; /* 縦型動画に適したアスペクト比を指定 */
+    margin: auto;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
     </style>
 </head>
 <body>
